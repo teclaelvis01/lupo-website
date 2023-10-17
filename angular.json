@@ -74,6 +74,7 @@
             ],
             "scripts": [
               "src/assets/js/jquery-1.12.4.min.js",
+              "src/assets/cs/common-js/jquery.countdown.min.js",
               "src/assets/js/popper.min.js",
               "src/assets/js/bootstrap.min.js",
               "src/assets/js/jquery.validate.min.js",
