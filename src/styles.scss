@@ -1,1 +1,54 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: normal;
+    font-display: swap;
+    src: url(assets/cs/fonts/opensans/v36/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4gaVc.ttf) format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-stretch: normal;
+    font-display: swap;
+    src: url(assets/cs/fonts/opensans/v36/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4gaVc.ttf) format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(assets/cs/fonts/poppins/v20/pxiEyp8kv8JHgFVrJJfedw.ttf) format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(assets/cs/fonts/poppins/v20/pxiByp8kv8JHgFVrLGT9Z1xlEA.ttf) format('truetype');
+  }
+
+
+  // "src/assets/css/jquery.pagepiling.min.css",
+  // "src/assets/css/style.css"
+
+  // <!-- Font -->
+	
+	// <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700%7CPoppins:400,500" rel="stylesheet">
+  @import 'https://fonts.googleapis.com/css?family=Open+Sans:400,700%7CPoppins:400,500';
+	
+	// <!-- Stylesheets -->
+	
+	@import 'assets/cos/common-css/bootstrap.css';
+	@import 'assets/cos/common-css/ionicons.css';
+	@import 'assets/cos/common-css/jquery.classycountdown.css';
+	@import 'assets/cos/coming-soon/css/styles.css';
+	@import 'assets/cos/coming-soon/css/responsive.css';
+	
+	// <link href="01-comming-soon/css/responsive.css" rel="stylesheet">
+  // @import 'assets/cs/common-css/ionicons.css';
