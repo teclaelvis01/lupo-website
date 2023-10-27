@@ -1,3 +1,9 @@
+:root{
+    --yellow-theme: #D4F21B;
+    --yellow-dark-theme: #758700;
+    
+}
+
 /* You can add global styles to this file, and also import other style files */
 @font-face {
     font-family: 'Open Sans';
@@ -34,7 +40,8 @@
   }
 
 
-  // "src/assets/css/jquery.pagepiling.min.css",
+  @import "assets/css/jquery.pagepiling.min.css";
+  @import "assets/css/style.css";
   // "src/assets/css/style.css"
 
   // <!-- Font -->
@@ -44,11 +51,18 @@
 	
 	// <!-- Stylesheets -->
 	
-	@import 'assets/cos/common-css/bootstrap.css';
-	@import 'assets/cos/common-css/ionicons.css';
-	@import 'assets/cos/common-css/jquery.classycountdown.css';
-	@import 'assets/cos/coming-soon/css/styles.css';
-	@import 'assets/cos/coming-soon/css/responsive.css';
+	// @import 'assets/cos/common-css/bootstrap.css';
+	// @import 'assets/cos/common-css/ionicons.css';
+	// @import 'assets/cos/common-css/jquery.classycountdown.css';
+	// @import 'assets/cos/coming-soon/css/styles.css';
+	// @import 'assets/cos/coming-soon/css/responsive.css';
 	
 	// <link href="01-comming-soon/css/responsive.css" rel="stylesheet">
   // @import 'assets/cs/common-css/ionicons.css';
+
+  // HOME
+  .icon-play{
+    &.popup-youtube{
+      border-color: var(--yellow-theme);
+    }
+  }

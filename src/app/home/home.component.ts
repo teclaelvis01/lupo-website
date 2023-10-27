@@ -1,4 +1,5 @@
 import { AfterViewInit, Component, OnInit } from '@angular/core';
+import { TagsService } from '../services/tags-service.service';
 declare var $: any;
 @Component({
   selector: 'app-home',
@@ -8,8 +9,11 @@ declare var $: any;
 export class HomeComponent implements OnInit, AfterViewInit {
 
   yearsExperience: number = 0;
-  
-  constructor() { }
+  currentYear: number = new Date().getFullYear();
+
+  constructor(private tagsService: TagsService) {
+    this.configureMetaTags();
+  }
   ngAfterViewInit(): void {
     $(window).on('load', function () {
       console.log('window loaded');
@@ -21,12 +25,11 @@ export class HomeComponent implements OnInit, AfterViewInit {
       /* Full page scroll*/
       console.log('DODUMENT READY');
       if ($('#pagepiling').length > 0) {
-        console.log('pagepiling OKOKOKOKOKOKOKOOKOKO');
         $('#pagepiling').pagepiling({
           scrollingSpeed: 280,
           navigation: false,
           menu: '.navbar-nav',
-          anchors: ['home', 'about', 'experience', 'skills', 'projects', 'partners', 'testimonials', 'news', 'contact'],
+          anchors: ['home', 'music', 'contact'],
           afterRender: function (anchorLink: any, index: any) {
             NavbarColor();
 
@@ -139,8 +142,22 @@ export class HomeComponent implements OnInit, AfterViewInit {
   }
 
 
+  configureMetaTags() {
+    // 
+    this.tagsService.addTags([
+      { name: 'description', content: 'Página oficial de Lupo Vidal' },
+      { name: 'keywords', content: 'Lupo Vidal, Lupo, Vidal, LupoVidal, Lupo Vidal, LupoVidal.com,Lupo Vidal Oficial' },
+      { name: 'robots', content: 'index, follow' },
+      { name: 'author', content: 'Lupo Vidal' },
+      { property: 'og:title', content: 'Lupo Vidal' },
+      { property: 'og:site_name', content: 'Lupo Vidal' },
+      { property: 'og:image', content: 'https://yt3.googleusercontent.com/ytc/APkrFKb10aGcHbkB40GZdSfPlJ1mJuNy88FB_Rc0ivlC=s900-c-k-c0x00ffffff-no-rj' },
+      { property: 'og:description', content: 'Website Oficial de Lupo Vidal' },
+    ]);
+  }
 
 
-  
+
+
 
 }

@@ -45,15 +45,7 @@
               "src/assets/js/jquery.validate.min.js",
               "src/assets/js/jquery.magnific-popup.min.js",
               "src/assets/js/jquery.pagepiling.min.js",
-              "src/assets/js/owl.carousel.min.js",
-
-              "src/assets/cos/common-js/jquery-3.1.1.min.js",
-              "src/assets/cos/common-js/tether.min.js",
-              "src/assets/cos/common-js/bootstrap.js",
-              "src/assets/cos/common-js/jquery.classycountdown.js",
-              "src/assets/cos/common-js/jquery.knob.js",
-              "src/assets/cos/common-js/jquery.throttle.js"
-              
+              "src/assets/js/owl.carousel.min.js"
             ]
           },
           "configurations": {
